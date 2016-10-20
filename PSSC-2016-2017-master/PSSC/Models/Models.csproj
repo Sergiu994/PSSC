@@ -39,21 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="interfaces\ICurs.cs" />
-    <Compile Include="interfaces\ICursFisa.cs" />
-    <Compile Include="interfaces\IOrarCurs.cs" />
-    <Compile Include="interfaces\IFacultate.cs" />
-    <Compile Include="interfaces\IProfessor.cs" />
-    <Compile Include="interfaces\ISectie.cs" />
+    <Compile Include="interfaces\IProfesor.cs" />
     <Compile Include="interfaces\IStudent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="source\Curs.cs" />
-    <Compile Include="source\OrarCurs.cs" />
-    <Compile Include="source\Facultate.cs" />
-    <Compile Include="source\FisaCurs.cs" />
-    <Compile Include="source\Orar.cs" />
-    <Compile Include="source\Sectia.cs" />
-    <Compile Include="source\Professor.cs" />
+    <Compile Include="source\Decanat.cs" />
+    <Compile Include="source\Materie.cs" />
+    <Compile Include="source\Profesor.cs" />
+    <Compile Include="source\Situatia.cs" />
     <Compile Include="source\Student.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
