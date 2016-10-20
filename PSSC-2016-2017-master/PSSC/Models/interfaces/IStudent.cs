@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    interface IStudent : ISectie
+    interface IStudent 
     {
-        string Nume_student
+        string NumeStudent
         {
             get;
             set;
         }
-        string Nr_matricol
+        string NrMatricol
         {
             get;
             set;
         }
-        string CNP
+        string Cnp
         {
             get;
             set;
         }
-        int An_studiu
+        int AnStudiu
         {
             get;
             set;

@@ -6,38 +6,42 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class Student : Sectia, IStudent
+    public class Student :IStudent
     {
-        string nume_student;
-        string nr_matricol;
-        string cnp;
-        int an_studiu;
-        public string Nume_student
+        string numeStudent;
+        string nrMatricol;
+        string CNP;
+        int anStudiu;
+
+        public string NumeStudent
         {
-            get { return nume_student; }
-            set { nume_student = value; }
+            get { return numeStudent; }
+            set { numeStudent = value; }
         }
-        public string Nr_matricol
+
+        public string NrMatricol
         {
-            get { return nr_matricol; }
-            set { nr_matricol = value; }
+            get { return nrMatricol; }
+            set { nrMatricol = value; }
         }
-        public string CNP
+
+        public string Cnp
         {
-            get { return cnp; }
-            set { cnp = value; }
+            get { return CNP; }
+            set { CNP = value; }
         }
-        public int An_studiu
+        public int AnStudiu
         {
-            get { return an_studiu; }
-            set { an_studiu = value; }
+            get { return anStudiu; }
+            set { anStudiu = value; }
         }
-        public Student(string Nume_facultate, string Nume_sectie, string Nume_student, string Nr_matricol, string CNP, int An_studiu): base( Nume_facultate, Nume_sectie)
+
+        public Student(string numeStudent, string nrMatricol, string Cnp, int anStudiu)
         {
-            nume_student = Nume_student;
-            nr_matricol = Nr_matricol;
-            cnp = CNP;
-            an_studiu = An_studiu;
+            this.anStudiu = anStudiu;
+            this.numeStudent = numeStudent;
+            this.nrMatricol = nrMatricol;
+            this.Cnp = Cnp;
         }
     }
 }

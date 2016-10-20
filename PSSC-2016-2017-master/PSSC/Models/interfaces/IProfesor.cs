@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models.interfaces
 {
-    public enum nume_Titlu
+    public enum numeleTitlului
     {
         Profesor,
         Conferentiar,
@@ -15,14 +15,20 @@ namespace Models.interfaces
         Doctorand
     }
 
-    interface IProfessor
+    interface IProfesor
     {
-        string Nume_Profesor
+        string NumeProfesor
         {
             get;
             set;
         }
-        nume_Titlu titlul
+        numeleTitlului Titlul
+        {
+            get;
+            set;
+        }
+
+        string Curs
         {
             get;
             set;
